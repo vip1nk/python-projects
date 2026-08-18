@@ -49,4 +49,4 @@ class Student :
 stu1 = Student("student1",1 , [100,100],["maths","physics"])
 
 stu1.view() 
-#stu1.avg()
+stu1.avg()
