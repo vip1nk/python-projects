@@ -6,9 +6,9 @@ class Student :
     self.subjects = subjects
 
   def add_std(self) :
-    details = input(self.name, self.roll_no, self.marks, self.subjects)
+    details = input(self.name)
     save = open("data.txt" , "w")
-    save.write(details)
+    save.write("name = " + details)
     save.close()
     
   def view(self):
@@ -20,7 +20,7 @@ class Student :
 
   def avg (self):
     summ = sum(self.marks)/len(self.marks)
-    return summ
+    print(summ)
 
   def highest(self):
     print("the highest number is ",max(self.marks))
@@ -38,7 +38,7 @@ class Student :
 
   #def deletion(self):
    
-  def display(self):
+  def display(self): #working correctly 
     fileee = open("data.txt" , "r")
     data = fileee.read()
   
@@ -47,6 +47,9 @@ class Student :
 
 
 stu1 = Student("student1",1 , [100,100],["maths","physics"])
-
-stu1.view() 
 stu1.avg()
+
+stu1.add_std() 
+stu1.display()
+stu1.highest()
+stu1.lowest()
