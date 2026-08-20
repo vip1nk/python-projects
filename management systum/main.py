@@ -1,15 +1,26 @@
-class Student : 
+class Student :  
   def __init__(self,name,roll_no,marks,subjects):
     self.name = name
     self.roll_no = roll_no
     self.marks = marks
     self.subjects = subjects
 
-  def add_std(self) :
-    details = input(self.name)
-    save = open("data.txt" , "w")
-    save.write("name = " + details)
-    save.close()
+  def add_std(self) :#working
+    num = int(input("enter number of students to be added :  "))
+    i = 0
+    while i < num  : 
+     namee = input("ENTER YOUR NAME ;")
+     rol_nu = input("PLEASE ENTER ROLL OF STUDENT ")
+     save = open("data.txt" , "a")
+     save.write("name = " + namee)
+     save.write("name = " + rol_nu)
+     save.write("----------------\n")
+     save.close()
+     i += 1 
+
+
+
+
     
   def view(self):
     save = open("data.txt" , "r")
@@ -28,13 +39,22 @@ class Student :
   def lowest(self):
     print("the lowest number is ",min(self.marks))
 
-  def serching_by_name(self):
-    namee= input("enter the name of student to search for ____")
-    if namee == self.name :
-      print(Student.view())
+  def serching_by_name(self): #modified
+      
+      namee= input("enter the name of student to search for ")
 
-    else :
-      print("not found")    
+      save = open("data.txt","r")
+      data = save.read()
+
+      if namee in data :
+        print("found ,,,, ")
+
+      else :
+        print("not found ")
+
+      save.close()
+
+
 
   #def deletion(self):
    
@@ -46,10 +66,11 @@ class Student :
     fileee.close()
 
 
-stu1 = Student("student1",1 , [100,100],["maths","physics"])
+stu1 = Student("vipin",1 , [100,100],["maths","physics"])
 stu1.avg()
-
 stu1.add_std() 
-stu1.display()
-stu1.highest()
-stu1.lowest()
+#stu1.display()
+#stu1.highest()
+#stu1.lowest()
+
+stu1.serching_by_name()
