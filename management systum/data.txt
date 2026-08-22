@@ -1,0 +1,33 @@
+name = vipinname = 007----------------
+name = yash gahlotname = 066----------------
+name = sakshiname = 019----------------
+name = vipinname = 007----------------
+name = vipinname = 1----------------
+name = vipinname = 7----------------
+NAME  = vipin kumar prajaptiROLL NO = 7----------------
+NAME  = vineet prajpatiROLL NO = 17----------------
+NAME  = vipinROLL NO = 7\NAME  = vipin kumarROLL NO = 9NAME  = VIPINROLL NO = 11[90, 90, 99]----------------
+NAME  = vipinROLL NO = 11[10, 20]
+----------------NAME  = VIPIN
+ROLL NO = 11[10, 20, 30]
+----------------
+NAME  = vipin
+ROLL NO = 22
+marks = [89, 44, 33]
+----------------
+NAME  = vi
+ROLL NO = 11
+marks = [3, 4]
+----------------
+NAME  = VIPIN
+ROLL NO = 7
+marks = [10, 20]
+----------------
+NAME  = VIPINNN
+ROLL NO = 44
+marks = [22, 33, 22]
+----------------
+NAME  = VIPINNNN 
+ROLL NO = 99
+marks = [96, 99, 95, 90]
+----------------
