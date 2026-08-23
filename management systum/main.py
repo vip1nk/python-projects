@@ -15,7 +15,7 @@ class Student :
      marks = []
      x = int(input("enter the numbr of subjects "))
 
-     for i in range(x):
+     for j in range(x):
         mark = int(input("ENTER MARKS : "))
         marks.append(mark)
 
@@ -28,7 +28,7 @@ class Student :
      save.write("\n----------------")
 
      save.close()
-    i += 1 
+     i += 1 
 
 
 
@@ -72,19 +72,11 @@ class Student :
 
       save.close()
 
+  def deletion(self):
+     import os
+     os.remove("data.txt")
+     print("whole data is deleted ") 
 
-
-
-
-
-
-
-
-
-
-
-  #def deletion(self):
-   
   def display(self): #working correctly 
     fileee = open("data.txt" , "r")
     data = fileee.read()
@@ -93,14 +85,73 @@ class Student :
     fileee.close()
 
 
-stu1 = Student("vipin",1 , [100,100],["maths","physics"])
+#stu1 = Student("vipin",1 , [100,100],["maths","physics"])
 #stu1.avg()
-stu1.add_std() 
+#stu1.add_std() 
 #stu1.display()
 #stu1.highest()
 #stu1.lowest()
+#stu1.deletion()
+#stu1.serching_by_name()
+  def final_selection(self):
+    print("WELCOME TO STUDENT MANAGEMENT SYSTUM ++ ")
+    listt = ["ADD STUDENT DETAILS ",
+             "DISPLAY STUDENT",
+             "AVERAGE",
+             "HIGHEST",
+             "LOWEST",
+             "DELETION",
+             "SEARCHING BY NAME AND ROLL NUMBER",
+             "NONE "]
+    
+    for i in range(8): #while TRUE so it will repat acfter giving choice one time either in for it is befing stopped by default after a single call .....
+        print(str(i + 1), ":", listt[i])
 
-stu1.serching_by_name()
+    choice = int(input("ENTER A CHOICE "))
+
+    if choice == 1:
+        stu1.add_std()
+
+    elif choice == 2:
+        stu1.display()
+
+    elif choice == 3:
+        stu1.average()
+
+    elif choice == 4:
+        stu1.highest()
+
+    elif choice == 5:
+        stu1.lowest()
+
+    elif choice == 6:
+        stu1.deletion()
+
+    elif choice == 7:
+        stu1.serching_by_name()
+
+    elif choice == 8 :
+        print("error")
+
+stu1 = Student("vipin",1 , [100,100],["maths","physics"])
+
+stu1.final_selection()
+
+
+
+
+
+
+
+
+
+
+            
+
+
+#stu1 = Student("vipin",1 , [100,100],["maths","physics"])
+
+
 
 
 
