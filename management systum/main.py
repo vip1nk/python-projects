@@ -106,52 +106,44 @@ class Student :
     
     for i in range(8): #while TRUE so it will repat acfter giving choice one time either in for it is befing stopped by default after a single call .....
         print(str(i + 1), ":", listt[i])
-
+  #while True :
     choice = int(input("ENTER A CHOICE "))
 
     if choice == 1:
         stu1.add_std()
+        stu1.final_selection()#by this function we can recall our function aggain alteraive of while true : caseeeeeeeeeeeeeeeee
 
     elif choice == 2:
         stu1.display()
-
+        stu1.final_selection()
     elif choice == 3:
         stu1.average()
+        stu1.final_selection()
 
     elif choice == 4:
         stu1.highest()
+        stu1.final_selection()
 
     elif choice == 5:
         stu1.lowest()
+        stu1.final_selection()
 
     elif choice == 6:
         stu1.deletion()
-
+        stu1.final_selection()
     elif choice == 7:
         stu1.serching_by_name()
-
+        stu1.final_selection()
     elif choice == 8 :
         print("error")
+        stu1.final_selection()
+        
+      
+       # break
+
+
+
+
 
 stu1 = Student("vipin",1 , [100,100],["maths","physics"])
-
 stu1.final_selection()
-
-
-
-
-
-
-
-
-
-
-            
-
-
-#stu1 = Student("vipin",1 , [100,100],["maths","physics"])
-
-
-
-
-
