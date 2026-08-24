@@ -136,9 +136,15 @@ class Student :
         stu1.final_selection()
     elif choice == 8 :
         print("error")
-        stu1.final_selection()
-        
-      
+        check = input("do u WANT TO CONTINUE AGAIN ; [y/n]")
+        if check == "y" :
+         stu1.final_selection()
+
+        elif check == "n" :
+         print("stopped")
+
+        else : 
+         print("wrong input ")
        # break
 
 
