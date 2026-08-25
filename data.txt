@@ -1,3 +1,5 @@
-name = rajname = 12----------------
-name = vipinname = 7----------------
-name = sakshi name = 19----------------
+
+NAME  = 1
+ROLL NO = 12
+marks = [11]
+----------------
